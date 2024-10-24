@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Device</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        .btn{
+            display: flex;
+            margin-bottom: 0.5rem;
+            align-self: 100%;
+            border-radius: 5rem;
+            color: #ffffff;
+            padding: 0.2rem 2rem;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+
+        a.btn.btn-primary p{
+            font-weight: bold;
+            display: flex;
+        }
+        .btn:hover{
+            background: #000000;
+            transform: scale(1.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        .bg-red-500, .bg-teal-500, .bg-gray-800, .bg-gray-500 {
+            padding: 4px;
+        }
+
+        .mb-4 {
+            margin-bottom: 2px;
+        }
+
+        .bg-red-500, .bg-teal-500, .bg-gray-800, .bg-gray-500 {
+          height: 300px;
+        }
+
+        .bg-red-500 img, .bg-teal-500 img, .bg-gray-800 img, .bg-gray-500 img {
+          width: 300px;
+          height: 200px;
+          margin-right: 50px;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+          .bg-red-500 img, .bg-teal-500 img, .bg-gray-800 img, .bg-gray-500 img {
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+          }
+        }
+        
+    </style>
+    
+</head>
+<body class="bg-gray-100">
+
+  <!-- NAVBAR START -->
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #173B45;">
+    <img src="../photos/logo.png" alt="" width="50" style="margin-left: 10px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: #ffb47a;">PT Inti Pantja Press Industri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">    
+          <li class="nav-item">
+            <a class="nav-link" href="../page/index.php" style="color: #ffb47a;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/about.html" style="color: #ffb47a;">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffb47a;">
+              Form
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../page/logbook.php">Logbook Scrap</a></li>
+              <li><a class="dropdown-item" href="../page/abnormality.php">Abnormality</a></li>
+              <li><a class="dropdown-item" href="../page/security.php">Security Device</a></li>
+              <li><a class="dropdown-item" href="../page/tamu.php">Form Tamu</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/data.html" style="color: #ffb47a;">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <!-- CARD START -->
+  <div class="flex flex-col mt-md-20">
+
+    <!-- logbook scrap area -->
+    <div class="bg-red-500 text-white p-8 flex items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-bold mb-4">LOGBOOK AREA SCRAP</h1>
+        <p class="mb-4">Mendata tamu yang datang di area scrap.</p>
+        <a href="./data logbook.php">
+          <button class="bg-white text-red-500 font-bold py-2 px- rounded btn btn-primary">Lihat Data</button>
+        </a>
+      </div>
+      <img src="../photos/scrap icon.png" alt="Illustration of protected servers with a shield, computer, and globe" class="w-1/3">
+    </div>
+
+    <!-- ambormality -->
+    <div class="bg-teal-500 text-white p-8 flex items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-bold mb-4">ABNORMALITY</h1>
+        <p class="mb-4">Menandai setiap abnormality yang terlihat.</p>
+        <a href="./dataabnormality.php">
+          <button class="bg-white text-teal-500 font-bold py-2 px- rounded btn btn-primary">Lihat Data</button>
+        </a>
+      </div>
+      <img src="../photos/abnormality icon.png" alt="Illustration of data protection with a phone, fingerprint, and login screen" class="w-1/3">
+    </div>
+
+    <!-- security device -->
+    <div class="bg-gray-800 text-white p-8 flex items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-bold mb-4">SECURITY DEVICE</h1>
+        <p class="mb-4">Checksheet rutin security pada inventory yang dimiliki.</p>
+        <a href="./data security.php">
+          <button class="bg-white text-gray-800 font-bold py-2 px- rounded btn btn-primary">Lihat Data</button>
+        </a>
+      </div>
+      <img src="../photos/security icon.png" alt="Illustration of virus detection with a magnifying glass, documents, and a credit card" class="w-1/3">
+    </div>
+
+    <!-- logbook tamu -->
+    <div class="bg-gray-500 text-white p-8 flex items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-bold mb-4">LOGBOOK TAMU</h1>
+        <p class="mb-4">Mendata tamu yang datang di area PT IPPI.</p>
+        <a href="./data tamu.php">
+          <button class="bg-white text-gray-500 font-bold py-2 px- rounded btn btn-primary">Lihat Data</button>
+        </a>
+      </div>
+      <img src="../photos/tamu icon.png" alt="Illustration of virus detection with a magnifying glass, documents, and a credit card" class="w-1/3">
+    </div>
+  
+  </div>
+
+  <!-- CARD END -->
+   
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // dapatkan tinggi navbar
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+      // tambahkan margin atas pada elemen-elemen
+      document.querySelector('.flex.flex-col').style.marginTop = `${navbarHeight}px`;
+    </script>
+
+</body>
+</html>

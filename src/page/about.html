@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Affair</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <style>
+        body {
+          overflow-x: hidden;
+        }
+
+        .banner {
+          height: 100vh;
+          background: url(../photos/bg\ about.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .banner-content{
+          height: 100%;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .shadow-md {
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .card.mb-6 {
+          width: 117%;
+          margin-left: -90px;
+        }
+
+        .card-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 150px;
+          justify-items: center;
+        }
+
+        .accordion-item {
+          margin-left: 20px;
+          width: 97%;
+        }
+
+        .footer {
+            background-color: #000;
+            padding: 40px 0;
+        }
+        .footer .footer-logo img {
+            height: 50px;
+        }
+        .footer .footer-logo {
+            margin-bottom: 20px;
+        }
+        .footer .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer .footer-links a:hover {
+            color: #ff6600;
+        }
+        .footer .footer-contact i {
+            color: #ff6600;
+            margin-right: 10px;
+        }
+        .footer .footer-contact p {
+            margin: 0;
+        }
+        .footer .footer-social a {
+            color: #fff;
+            margin-right: 15px;
+        }
+        .footer .footer-social a:hover {
+            color: #ff6600;
+        }
+        .footer .footer-copyright {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+  </style>
+
+  <!-- NAVBAR START -->
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #173B45;">
+    <img src="../photos/logo.png" alt="" width="50" style="margin-left: 10px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: #ffb47a;">PT Inti Pantja Press Industri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">    
+          <li class="nav-item">
+            <a class="nav-link" href="../page/index.php" style="color: #ffb47a;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/about.html" style="color: #ffb47a;">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffb47a;">
+              Form
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../page/logbook.php">Logbook Scrap</a></li>
+              <li><a class="dropdown-item" href="../page/abnormality.php">Abnormality</a></li>
+              <li><a class="dropdown-item" href="../page/security.php">Security Device</a></li>
+              <li><a class="dropdown-item" href="../page/tamu.php">Form Tamu</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/data.html" style="color: #ffb47a;">Data</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+<!-- NAVBAR END -->
+
+    <!-- BANNER START -->
+    <div class="container-fluid banner">
+      <div class="container banner-content col-lg-6">
+        <div class="text-center" style="position: absolute; bottom: 0; right: 0; margin-right: 30px;">
+          <p class="fs-1 text-end" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <span style="color: rgb(255, 168, 55);">EXTERNAL AFFAIR
+              <span style="color: rgb(182, 113, 24);">SECTION
+              </span>  
+            </span><br>
+            <span style="color: rgb(255, 65, 65);">PT INTI PANTJA PRESS INDUSTRI
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- BANNER END -->
+
+  <!-- CAROUSEL START -->
+  <div class="container" style="margin-top: 150px;">
+    <div class="row">
+      <div class="col-md-6" style="margin-left: -50px;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="box-shadow: 10 10 10px rgba(0, 0, 0, 0.2);">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../photos/hut.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: #F8EDED;">HUT IPPI</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../photos/sport.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: #F8EDED;">SPORT TOURNAMENT</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../photos/family day.jpg" class="d-block w-100" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="color: #F8EDED;">FAMILY DAY</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        <div class="col-md-6">
+          <div class="bg-gray-1000 p-6 rounded-lg shadow-md border-4" style="margin-right: -100px; background-color: #ffba85; border-radius: 8px;">
+            <div class="px-4 py-3">
+              <p>PT Inti Pantja Press Industri yang merupakan bagian dari Astra Group. PT Inti Pantja Press Industri bergerak di bidang manufaktur komponen kendaraan bermotor. Perusahaan ini memproduksi berbagai macam komponen berbagai jenis komponen otomotif.</p>
+            </div>
+          </div>
+          <div class="bg-amber-600 p-6 rounded-lg shadow-md border-4" style="margin-right: -100px;  background-color: #ffba85; margin-top: 20px; border-radius: 8px;">
+            <div class="px-4 py-3">
+              <p>PT Inti Pantja Press Industri memiliki tenaga kerja profesional dan terampil. Mereka berperan penting dalam mendukung operasi harian perusahaan dan memastikan bahwa setiap produk yang dihasilkan sesuai dengan standar kualitas industri otomotif yang ketat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- CAROUSEL END -->
+   
+  <!-- TENTANG IPPI START -->
+    <div class="container mx-auto p-5">
+      <div class="card mb-6" style="height: 200px; margin-top: 100px; background-color: #ffba85">
+        <div class="row g-6">
+          <div class="col-md-6">
+            <div class="card-body">
+              <p class="card-text text-gray-800">
+                Seperti yang dijelaskan tadi PT Inti Pantja Press Industri ini memproduksi berbagai macam komponen. Berbagai jenis komponen otomotif itu diantanya adalah membuat komponen otomotif menggunakan teknologi stamping, komponen dalam bentuk sub-assembly, dan pembuatan cetakan (dies) untuk proses produksi komponen otomotif. Dan tentunya memiliki kualitas terbaik di pasar lokal maupun Internasional.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="../photos/scrap icon.png" height="1000" width="1000" class="img-fluid" style="margin-top: 50px; margin-left: 300px; transform: translate(-50%, -50%);" />
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- TENTANG IPPI END -->
+
+  <!-- EA MEMBER START -->
+    <div class="intro">
+      <p class="fs-1 text-center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <span style="color: rgb(182, 113, 24);">MEMBER OF  
+        </span><br>
+        <span style="color: rgb(255, 65, 65);">EXTERNAL AFFAIR
+        </span>
+      </p>
+    </div>
+
+  <!-- accordion -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" style="margin-top: 10px;">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            NURYATIN
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Kepala Seksi External Affair di PT Inti Panjta Press Industri bertanggung jawab atas pengelolaan hubungan eksternal, termasuk berkomunikasi dengan pihak ketiga seperti pemerintah, komunitas, media, dan mitra bisnis. Kepala seksi external affair juga harus memastikan bahwa kebijakan perusahaan dipahami oleh pihak luar, menjaga citra positif perusahaan, serta menangani isu-isu terkait regulasi, perizinan, dan tanggung jawab sosial perusahaan. Selain itu, kepala seksi external affair juga berperan dalam mengembangkan strategi komunikasi eksternal untuk mendukung tujuan bisnis perusahaan.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            ARDIEN YOGA
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            External affair di PT Inti Pantja Press Industri bertanggung jawab atas hubungan eksternal perusahaan dengan pihak luar, termasuk pemerintah, media, mitra bisnis, komunitas, dan organisasi terkait. Anggota tim external affair berperan dalam mengelola komunikasi, membangun citra positif, memastikan kepatuhan terhadap regulasi eksternal, serta menjaga relasi strategis yang dapat mendukung tujuan perusahaan. Mereka juga sering terlibat dalam kegiatan corporate social responsibility (CSR), pelaporan publik, serta mengelola krisis atau isu-isu yang berkaitan dengan reputasi perusahaan.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            AURA ZAFIRA
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Bertanggung jawab untuk mengelola hubungan dengan media, mengawasi strategi komunikasi eksternal, dan memastikan pesan perusahaan disampaikan dengan tepat. Anggota ini juga berperan dalam penyusunan siaran pers, mengelola krisis komunikasi, serta memantau persepsi publik terhadap perusahaan. Mereka harus memiliki kemampuan komunikasi yang kuat, hubungan yang luas dengan media, dan kemampuan berpikir strategis.</div>
+        </div>
+      </div>
+    </div>
+  <!-- EA MEMBER END -->
+
+  <!-- FOOTER START -->
+  <footer class="footer" style="color: #fff;">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-7 footer-logo">
+       <img alt="Vendor Booth Logo" height="50" src="../photos/logo.png"/>
+       <h5>
+        PT Inti Pantja Press Industri
+       </h5>
+       <p>
+        PT.Inti Pantja Press Industri telah menyediakan press premium untuk indsutri otomotif dan komponen di Indonesia. Ini adalah misi kami untuk menjadi mitra utama bagi industri otomotif skala besar. Pemegang saham kami adalah perusahaan publik terkemuka di Indonesia, PT. Astra International Tbk., dan penyedia baja international besar, Marubeni-Itochu Steel.
+       </p>
+       <div class="footer-social">
+        <a href="https://www.linkedin.com/company/inti-pantja-press-industri-pt/">
+         <i class="fab fa-linkedin">
+         </i>
+        </a>
+        <a href="https://www.instagram.com/ippi.asmo3/">
+         <i class="fab fa-instagram">
+         </i>
+        </a>
+        <a href="https://www.youtube.com/@IntiPantjaPressIndustri">
+         <i class="fab fa-youtube">
+         </i>
+        </a>
+       </div>
+      </div>
+      <div class="col-md-3 footer-contact">
+       <h5>
+        Nomor Handphone
+       </h5>
+       <p>
+        <i class="fas fa-phone">
+        </i>
+        +62 812-9090-8545
+       </p> <br>
+       <h5>
+        Alamat Email
+       </h5>
+       <p>
+        <i class="fas fa-envelope">
+        </i>
+        ardien.yoga@ippi.astra.co.id
+       </p><br>
+       <h5>
+        Alamat Kantor
+       </h5>
+       <p>
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Jl. Kaliabang No. 1, Pondok Ungu, RT.003/RW.007 17132 Kota Bekasi Jawa Barat
+       </p>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-12 text-center footer-copyright">
+       <p>
+        © 2024
+       </p>
+      </div>
+     </div>
+    </div>
+   </footer>
+  <!-- FOOTER END -->
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
